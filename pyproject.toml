@@ -1,16 +1,16 @@
 [tool.poetry]
 name = "amulet_map_editor_nix"
-version = "0.1.0"
-description = ""
+version = "0.10.27"
+description = "port of the Amulet-Map-Editor to nix"
 authors = ["heinwol <heinvvol@gmail.com>"]
 # readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-# amulet-map-editor = "^0.10.27"
+amulet-map-editor = "0.10.27"
 
 [tool.poetry.scripts]
-amulet-map-editor = "amulet-map-editor-nix:main"
+amulet-map-editor-nix = "amulet_map_editor_nix:main"
 
 [build-system]
 requires = ["poetry-core"]
